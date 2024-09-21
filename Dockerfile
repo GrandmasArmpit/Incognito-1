@@ -13,6 +13,6 @@ RUN corepack enable
 
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --prod --frozen-lockfile
 
-EXPOSE 8080
+EXPOSE 6969
 
 CMD ["pnpm", "start"]

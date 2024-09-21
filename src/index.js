@@ -45,7 +45,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 const app = connect();
 const ssl = existsSync("../ssl/key.pem") && existsSync("../ssl/cert.pem");
-const PORT = process.env.PORT || ssl ? 443 : 8080;
+const PORT = process.env.PORT || ssl ? 443 : 6969;
 const server = ssl ? createHttpsServer({
   key: readFileSync("../ssl/key.pem"),
   cert: readFileSync("../ssl/cert.pem")
